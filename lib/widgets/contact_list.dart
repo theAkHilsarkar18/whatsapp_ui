@@ -21,24 +21,24 @@ class ContactList extends StatelessWidget {
             title: Text(
               info[index]['name'].toString(),
               style: const TextStyle(
-                fontSize: 18,
+                fontSize: 16,
                 color: textColor,
               ),
             ),
             subtitle: Text(
               info[index]['message'].toString(),
-              style: const TextStyle(color: Colors.grey, fontSize: 15),
+              style: const TextStyle(color: Colors.grey, fontSize: 13),
             ),
             leading: CircleAvatar(
               backgroundImage:
                   NetworkImage(info[index]['profilePic'].toString()),
-              radius: 40,
+              radius: 25,
             ),
             trailing: Text(
               info[index]['time'].toString(),
               style: const TextStyle(
                 color: Colors.grey,
-                fontSize: 15,
+                fontSize: 13,
               ),
             ),
           ),
